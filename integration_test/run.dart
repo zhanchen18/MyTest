@@ -59,7 +59,7 @@ class RunTests{
       print("测试完成");
     }
 
-    sleep(const Duration(seconds:30));
+    // sleep(const Duration(seconds:30));
   }
 
   Future<bool> tapFinder(Finder finder, {int seconds = 2}) async {
