@@ -4,7 +4,7 @@ import 'package:flutter_driver/flutter_driver.dart';
 import 'package:test/test.dart';
 
 late FlutterDriver driver;
-void main(List<String> args) {
+void main() {
   group('Flutter App', () {
     // First, define the Finders. We can use these to locate Widgets from the
     // test suite. Note: the Strings provided to the `byValueKey` method must
