@@ -12,7 +12,7 @@ void main() {
 
     // Connect to the Flutter driver before running any tests
     setUpAll(() async {
-      driver = await FlutterDriver.connect(dartVmServiceUrl: "localhost:8888");
+      driver = await FlutterDriver.connect(dartVmServiceUrl: "localhost:9100");
       // Wait for the first frame to be rasterized during the app launch.
       await driver.waitUntilFirstFrameRasterized();
       driver.setSemantics(true);//设置这个之后，才能通过find.bySemanticsLabel查找
@@ -20,7 +20,6 @@ void main() {
 
 
     test("run", () async{
-      Map result = {};
 
       // Verify that our counter starts at 0.
       // expect(find.text('0'), findsOneWidget);
